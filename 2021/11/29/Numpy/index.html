@@ -5,17 +5,17 @@
   
 
   
-  <title>GitHub Pages with Hexo tips | 卢顺洪的博客</title>
+  <title>Numpy | 卢顺洪的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="教程博客: 教程 命令1$ hexo new &quot;article name&quot; # 写新文章  问题12$ ERROR Deployer not found: git # question$ npm install hexo-deployer-git –save # solution  其他VS Code预览Markdown快捷键：Ctrl+Shirt+V">
+  <meta name="description" content="小问题 负数的立方根  12print((-1000)**(1&#x2F;3))(5+8.660254037844384j) # 输出出现问题！  解决方法：先计算正数的立方根再带上负号！  负数步长  python中负数步长即代表反向切片！  ndarray.flags  flags.owndata属性表示该数组是否拥有数据！  isin()函数  isin()接受一个列表，判断该列中元素是否在列表中。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GitHub Pages with Hexo tips">
-<meta property="og:url" content="https://shunhonglu.github.io/2021/11/21/GitHub%20Pages%20with%20Hexo%20tips/index.html">
+<meta property="og:title" content="Numpy">
+<meta property="og:url" content="https://shunhonglu.github.io/2021/11/29/Numpy/index.html">
 <meta property="og:site_name" content="卢顺洪的博客">
-<meta property="og:description" content="教程博客: 教程 命令1$ hexo new &quot;article name&quot; # 写新文章  问题12$ ERROR Deployer not found: git # question$ npm install hexo-deployer-git –save # solution  其他VS Code预览Markdown快捷键：Ctrl+Shirt+V">
+<meta property="og:description" content="小问题 负数的立方根  12print((-1000)**(1&#x2F;3))(5+8.660254037844384j) # 输出出现问题！  解决方法：先计算正数的立方根再带上负号！  负数步长  python中负数步长即代表反向切片！  ndarray.flags  flags.owndata属性表示该数组是否拥有数据！  isin()函数  isin()接受一个列表，判断该列中元素是否在列表中。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-11-21T09:57:23.505Z">
-<meta property="article:modified_time" content="2021-11-22T11:56:52.247Z">
+<meta property="article:published_time" content="2021-11-29T12:47:38.000Z">
+<meta property="article:modified_time" content="2021-11-30T08:05:36.181Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="卢顺洪的博客" type="application/atom+xml">
@@ -65,10 +65,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-GitHub Pages with Hexo tips" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Numpy" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2021/11/21/GitHub%20Pages%20with%20Hexo%20tips/" class="article-date">
-  <time datetime="2021-11-21T09:57:23.505Z" itemprop="datePublished">2021-11-21</time>
+    <a href="/2021/11/29/Numpy/" class="article-date">
+  <time datetime="2021-11-29T12:47:38.000Z" itemprop="datePublished">2021-11-29</time>
 </a>
     
   </div>
@@ -79,7 +79,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      GitHub Pages with Hexo tips
+      Numpy
     </h1>
   
 
@@ -87,17 +87,38 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><p>博客: <a target="_blank" rel="noopener" href="https://hans2936.github.io/">教程</a></p>
-<h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;article name&quot;</span> <span class="comment"># 写新文章</span></span><br></pre></td></tr></table></figure>
+        <h2 id="小问题"><a href="#小问题" class="headerlink" title="小问题"></a>小问题</h2><ol>
+<li>负数的立方根</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>((-<span class="number">1000</span>)**(<span class="number">1</span>/<span class="number">3</span>))</span><br><span class="line">(<span class="number">5</span>+<span class="number">8.660254037844384j</span>) <span class="comment"># 输出出现问题！</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ERROR Deployer not found: git <span class="comment"># question</span></span><br><span class="line">$ npm install hexo-deployer-git –save <span class="comment"># solution</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>VS Code预览Markdown快捷键：Ctrl+Shirt+V</p>
+<p>解决方法：先计算正数的立方根再带上负号！</p>
+<ol start="2">
+<li>负数步长</li>
+</ol>
+<p>python中负数步长即代表反向切片！</p>
+<ol start="3">
+<li>ndarray.flags</li>
+</ol>
+<p>flags.owndata属性表示该数组是否拥有数据！</p>
+<ol start="4">
+<li>isin()函数</li>
+</ol>
+<p>isin()接受一个列表，判断该列中元素是否在列表中。</p>
+<ol start="5">
+<li>plt.legend()</li>
+</ol>
+<ul>
+<li><p>给plt.plot( )中参数label=’’传入字符串类型的值，也就是图例的名称</p>
+</li>
+<li><p>第二步：使用plt.legend( )使上述代码产生效果</p>
+</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://shunhonglu.github.io/2021/11/21/GitHub%20Pages%20with%20Hexo%20tips/" data-id="ckwatrcjx0000hgw273239erz" class="article-share-link">Share</a>
+      <a data-url="https://shunhonglu.github.io/2021/11/29/Numpy/" data-id="ckwx1qjyq000078w26ty19hou" class="article-share-link">Share</a>
       
       
     </footer>
@@ -106,15 +127,20 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/11/22/Linear-Regression/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/12/05/%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD%E6%B8%B8%E8%AE%B0/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          Linear Regression
+          森林公园游记
         
       </div>
     </a>
   
+  
+    <a href="/2021/11/22/Linear-Regression/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Linear Regression</div>
+    </a>
   
 </nav>
 
