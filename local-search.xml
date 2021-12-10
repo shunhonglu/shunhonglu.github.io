@@ -11,6 +11,12 @@
     <content type="html"><![CDATA[<p>来华科已经是第五个年头了，但这却是我第一次在森林公园野餐，和好朋友们度过了一个愉快地下午。以后我应该也会经常来这儿走走，亲近大自然，休息眼睛。<br>备注：从韵苑那里的小路可直达森林公园，总共用时不超过半刻钟！</p><p><img src="/2021/12/05/%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD%E6%B8%B8%E8%AE%B0/%E5%90%88%E5%BD%B11.jpeg"></p><p><img src="/2021/12/05/%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD%E6%B8%B8%E8%AE%B0/%E5%90%88%E5%BD%B12.jpeg"></p>]]></content>
     
     
+    <categories>
+      
+      <category>生活</category>
+      
+    </categories>
+    
     
   </entry>
   
@@ -36,6 +42,12 @@
     
     <content type="html"><![CDATA[<h2 id="Linear-regression-with-one-variable"><a href="#Linear-regression-with-one-variable" class="headerlink" title="Linear regression with one variable"></a>Linear regression with one variable</h2><h3 id="Plotting-the-Data"><a href="#Plotting-the-Data" class="headerlink" title="Plotting the Data"></a>Plotting the Data</h3><ol><li>数据读取</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">path =  <span class="hljs-string">&#x27;mypath&#x27;</span><br>data = pd.read_csv(path,  names=[<span class="hljs-string">&#x27;Population&#x27;</span>, <span class="hljs-string">&#x27;Profit&#x27;</span>]) <span class="hljs-comment"># DataFrame</span><br></code></pre></td></tr></table></figure><ol start="2"><li>绘图</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">data.plot(kind=<span class="hljs-string">&#x27;scatter&#x27;</span>, x=<span class="hljs-string">&#x27;Population&#x27;</span>, y=<span class="hljs-string">&#x27;Profit&#x27;</span>, figsize=(<span class="hljs-number">12</span>,<span class="hljs-number">8</span>))<br>plt.show() <span class="hljs-comment"># Source Code?</span><br></code></pre></td></tr></table></figure><h3 id="Gradient-Descent"><a href="#Gradient-Descent" class="headerlink" title="Gradient Descent"></a>Gradient Descent</h3><ol><li></li><li><p>预处理</p></li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">data.insert(<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;Ones&#x27;</span>, <span class="hljs-number">1</span>)<br></code></pre></td></tr></table></figure><p><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.insert.html">pandas.DataFrame.insert</a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">cols = data.shape[<span class="hljs-number">1</span>]<br>X = data.iloc[:,:-<span class="hljs-number">1</span>] <span class="hljs-comment"># 负数索引-1返回列表最后一个元素</span><br>y = data.iloc[:,cols-<span class="hljs-number">1</span>:cols]<br></code></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">X = np.matrix(X.to_numpy())<br>y = np.matrix(y.to_numpy())<br>theta = np.matrix(np.array([<span class="hljs-number">0</span>,<span class="hljs-number">0</span>]))<br></code></pre></td></tr></table></figure>]]></content>
     
+    
+    <categories>
+      
+      <category>机器学习</category>
+      
+    </categories>
     
     
   </entry>
