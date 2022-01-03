@@ -4,11 +4,113 @@
   
   
   <entry>
+    <title>Markdown-排版规范</title>
+    <link href="/2022/01/03/Markdown-%E6%8E%92%E7%89%88%E8%A7%84%E8%8C%83/"/>
+    <url>/2022/01/03/Markdown-%E6%8E%92%E7%89%88%E8%A7%84%E8%8C%83/</url>
+    
+    <content type="html"><![CDATA[<h2 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h2><ol><li><a href="https://blog.csdn.net/u012349679/article/details/106413781">基于 Markdown 的中文文档排版规范</a></li><li><a href="https://zhuanlan.zhihu.com/p/69376149">会用 Markdown 还不够，还得知道排版规范</a></li></ol>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Markdown-数学公式</title>
+    <link href="/2022/01/03/Markdown-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
+    <url>/2022/01/03/Markdown-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-基本语法"><a href="#1-基本语法" class="headerlink" title="1.基本语法"></a>1.基本语法</h2><h3 id="1-1-行内公式"><a href="#1-1-行内公式" class="headerlink" title="1.1 行内公式"></a>1.1 行内公式</h3><ul><li>行内公式的格式是<code>$...$</code></li><li>例如$g(z) = {1\over 1+e^{-z}}$的写法是：<code>$g(z) = &#123;1\over 1+e^&#123;-z&#125;&#125;$</code></li></ul><h3 id="1-2-整行公式"><a href="#1-2-整行公式" class="headerlink" title="1.2 整行公式"></a>1.2 整行公式</h3><ul><li>整行公式的格式是<code>$$...$$</code></li><li>例如<br>$$h_\theta(x) = g(\theta^Tx)$$</li><li>写法是：<code>$$h_\theta(x) = g(\theta^Tx)$$</code> </li></ul><h2 id="2-希腊字母"><a href="#2-希腊字母" class="headerlink" title="2.希腊字母"></a>2.希腊字母</h2><table><thead><tr><th align="center">显示</th><th align="center">命令</th><th align="center">显示</th><th align="center">命令</th></tr></thead><tbody><tr><td align="center">α</td><td align="center">\alpha</td><td align="center">β</td><td align="center">\beta</td></tr><tr><td align="center">γ</td><td align="center">\gamma</td><td align="center">δ</td><td align="center">\delta</td></tr><tr><td align="center">ε</td><td align="center">\epsilon</td><td align="center">ζ</td><td align="center">\zeta</td></tr><tr><td align="center">η</td><td align="center">\eta</td><td align="center">θ</td><td align="center">\theta</td></tr><tr><td align="center">ι</td><td align="center">\iota</td><td align="center">κ</td><td align="center">\kappa</td></tr><tr><td align="center">λ</td><td align="center">\lambda</td><td align="center">μ</td><td align="center">\mu</td></tr><tr><td align="center">ν</td><td align="center">\nu</td><td align="center">ξ</td><td align="center">\xi</td></tr><tr><td align="center">π</td><td align="center">\pi</td><td align="center">ρ</td><td align="center">\rho</td></tr><tr><td align="center">σ</td><td align="center">\sigma</td><td align="center">τ</td><td align="center">\tau</td></tr><tr><td align="center">υ</td><td align="center">\upsilon</td><td align="center">φ</td><td align="center">\phi</td></tr><tr><td align="center">χ</td><td align="center">\chi</td><td align="center">ψ</td><td align="center">\psi</td></tr><tr><td align="center">ω</td><td align="center">\omega</td><td align="center"></td><td align="center"></td></tr></tbody></table><ul><li>若需要大写希腊字母，将命令首字母大写即可</li><li>若需要斜体希腊字母，在命令前加上var前缀即可</li></ul><h2 id="3-上标与下标"><a href="#3-上标与下标" class="headerlink" title="3.上标与下标"></a>3.上标与下标</h2><ul><li>上标用<code>^</code>来表示，例如$x^2$表示为：<code>$x^2$</code></li><li>下标用<code>-</code>来表示，例如$x_2$表示为：<code>$x_2$</code></li><li>若上标或下标是一个表达式，则需要加上<code>&#123;&#125;</code>，例如$x^{t-1}$表示为：<code>$x^&#123;t-1&#125;$</code></li></ul><h2 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h2><ol><li><a href="https://www.jianshu.com/p/8b6fc36035c0">Markdown-常用数学公式编辑命令</a></li><li><a href="https://blog.csdn.net/m0_37167788/article/details/78809779#:~:text=%E5%9C%A8Markdown%E4%B8%AD%EF%BC%8C%E6%9C%89%E4%B8%A4%E7%A7%8D%E8%BE%93%E5%85%A5%E5%85%AC%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9A%E4%B8%80%E6%98%AF%E8%A1%8C%E5%86%85%E5%85%AC%E5%BC%8F%EF%BC%88inline%EF%BC%89%EF%BC%8C%E7%94%A8%E4%B8%80%E5%AF%B9%E7%BE%8E%E5%85%83%E7%AC%A6%E5%8F%B7%20%24%20%E5%8C%85%E8%A3%B9%E3%80%82%20%E4%BA%8C%E6%98%AF%E6%95%B4%E8%A1%8C%E5%85%AC%E5%BC%8F%EF%BC%88displayed%EF%BC%89%EF%BC%8C%E7%94%A8%E4%B8%80%E5%AF%B9%E7%B4%A7%E6%8C%A8%E7%9A%84%E4%B8%A4%E4%B8%AA%E7%BE%8E%E5%85%83%E7%AC%A6%E5%8F%B7%20%24%24%20%E5%8C%85%E8%A3%B9%E3%80%82%20%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E8%A1%8C%E5%86%85%E5%85%AC%E5%BC%8F%20E,m%20c%202%20%EF%BC%8C%E5%86%99%E6%B3%95%E6%98%AF%EF%BC%9A%20%24E%3Dmc%5E2%24%20%E3%80%82%202.%20%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D">Markdown系列（6）- 如何优雅地在Markdown中输入数学公式</a></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>Markdown</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Logistic regression</title>
+    <link href="/2022/01/03/Logistic-regression/"/>
+    <url>/2022/01/03/Logistic-regression/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-原理"><a href="#1-原理" class="headerlink" title="1 原理"></a>1 原理</h2><h3 id="1-1-Hypothesis-representation"><a href="#1-1-Hypothesis-representation" class="headerlink" title="1.1 Hypothesis representation"></a>1.1 Hypothesis representation</h3><p>$$h_\theta(x)=g(\theta^Tx)$$</p><p>其中$g(z)={1\over 1+e^{-z}}$，称作Sigmoid function或Logistic function。</p><p><strong>Attention</strong>:$h_\theta(x)$estimated probability that $y=$&amp; on input $x$</p><h3 id="1-2-Decision-boundary"><a href="#1-2-Decision-boundary" class="headerlink" title="1.2 Decision boundary"></a>1.2 Decision boundary</h3><p>Suppose predict $”y=1”$ if $h_\theta(x) \geq 0.5$,predict $”y=0”$ if $h_\theta(x) &lt; 0.5$<br><br>so decision boundary presents when $\theta^Tx=0$</p><h3 id="1-3-Cost-Function"><a href="#1-3-Cost-Function" class="headerlink" title="1.3 Cost Function"></a>1.3 Cost Function</h3>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Linear regression</title>
+    <link href="/2021/12/29/Linear-regression/"/>
+    <url>/2021/12/29/Linear-regression/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-原理"><a href="#1-原理" class="headerlink" title="1 原理"></a>1 原理</h2><h3 id="1-1-Feature-Scaling"><a href="#1-1-Feature-Scaling" class="headerlink" title="1.1 Feature Scaling"></a>1.1 Feature Scaling</h3><ul><li>Mean normalization</li></ul><h3 id="1-2-Learning-rate"><a href="#1-2-Learning-rate" class="headerlink" title="1.2 Learning rate"></a>1.2 Learning rate</h3><ul><li>declare convergerce by graph</li></ul><h3 id="1-3"><a href="#1-3" class="headerlink" title="1.3"></a>1.3</h3><ul><li>可以将多个不同的特征合并为一个</li><li>使用多项式或者表达式进行预测</li></ul><h3 id="1-4-Normal-equation"><a href="#1-4-Normal-equation" class="headerlink" title="1.4 Normal equation"></a>1.4 Normal equation</h3><ul><li>数值分析已经证明过！</li></ul><h2 id="2-代码"><a href="#2-代码" class="headerlink" title="2 代码"></a>2 代码</h2><h3 id="2-1"><a href="#2-1" class="headerlink" title="2.1"></a>2.1</h3><h3 id="2-2-遇到的问题"><a href="#2-2-遇到的问题" class="headerlink" title="2.2 遇到的问题"></a>2.2 遇到的问题</h3><ol><li><p>numpy.matrix类，官方不建议使用该类，而是选择array</p></li><li><p>numpy中如何将一维数组转置？</p></li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs python">&gt;&gt;&gt;<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np<br><br><span class="hljs-meta">&gt;&gt;&gt; </span>a = np.array([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>])<br><span class="hljs-comment"># it doesn&#x27;t work!</span><br><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(a.T)<br>[<span class="hljs-number">1</span> <span class="hljs-number">2</span> <span class="hljs-number">3</span>]<br><span class="hljs-comment"># it returns a copy</span><br>&gt;&gt;&gt;<span class="hljs-built_in">print</span>(np.transpose([a]))<br>[[<span class="hljs-number">1</span>]<br> [<span class="hljs-number">2</span>]<br> [<span class="hljs-number">3</span>]]<br><span class="hljs-comment"># it returns a reference</span><br>&gt;&gt;&gt;<span class="hljs-built_in">print</span>(a.reshape(<span class="hljs-built_in">len</span>(a), -<span class="hljs-number">1</span>))<br>[[<span class="hljs-number">1</span>]<br> [<span class="hljs-number">2</span>]<br> [<span class="hljs-number">3</span>]]<br><span class="hljs-comment"># it returns a reference</span><br>&gt;&gt;&gt;<span class="hljs-built_in">print</span>(a[:, <span class="hljs-literal">None</span>])<br>[[<span class="hljs-number">1</span>]<br> [<span class="hljs-number">2</span>]<br> [<span class="hljs-number">3</span>]]<br></code></pre></td></tr></table></figure><ol start="3"><li>多维数组切片后是一个一维数组</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np<br><br><span class="hljs-meta">&gt;&gt;&gt; </span>b = np.arange(<span class="hljs-number">12</span>).reshape(<span class="hljs-number">3</span>, -<span class="hljs-number">1</span>)<br><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(b)<br>[[ <span class="hljs-number">0</span>  <span class="hljs-number">1</span>  <span class="hljs-number">2</span>  <span class="hljs-number">3</span>]<br> [ <span class="hljs-number">4</span>  <span class="hljs-number">5</span>  <span class="hljs-number">6</span>  <span class="hljs-number">7</span>]<br> [ <span class="hljs-number">8</span>  <span class="hljs-number">9</span> <span class="hljs-number">10</span> <span class="hljs-number">11</span>]]<br><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(b[:, <span class="hljs-number">1</span>])<br>[<span class="hljs-number">1</span> <span class="hljs-number">5</span> <span class="hljs-number">9</span>]<br></code></pre></td></tr></table></figure><ol start="4"><li>Mean normalization</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-comment"># attention!</span><br><span class="hljs-meta">&gt;&gt;&gt; </span>data = (data-data.mean())/data.std()<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>机器学习</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Python</title>
+    <link href="/2021/12/26/Python/"/>
+    <url>/2021/12/26/Python/</url>
+    
+    <content type="html"><![CDATA[<h2 id="小问题"><a href="#小问题" class="headerlink" title="小问题"></a>小问题</h2><ol><li>今天在用pip导包时发现如果打开了dev-sidercar会出现导包失败的情况，关闭dev-sidercar即恢复正常，猜想可能的原因是dev-sidercar用dns解析域名时发生错误？（留待以后学习网络时深究）</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>Python</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>服装穿搭</title>
+    <link href="/2021/12/13/%E6%9C%8D%E8%A3%85%E7%A9%BF%E6%90%AD/"/>
+    <url>/2021/12/13/%E6%9C%8D%E8%A3%85%E7%A9%BF%E6%90%AD/</url>
+    
+    <content type="html"><![CDATA[<h1 id="衣裤"><a href="#衣裤" class="headerlink" title="衣裤"></a>衣裤</h1><h2 id="夏季"><a href="#夏季" class="headerlink" title="夏季"></a>夏季</h2><h2 id="冬季"><a href="#冬季" class="headerlink" title="冬季"></a>冬季</h2><h3 id="棉衣"><a href="#棉衣" class="headerlink" title="棉衣"></a>棉衣</h3><h3 id="羽绒服"><a href="#羽绒服" class="headerlink" title="羽绒服"></a>羽绒服</h3><ol><li>网易严选羽绒服</li></ol><table><thead><tr><th align="center">尺码</th><th align="center">型号</th><th align="center">肩宽</th><th align="center">胸围</th><th align="center">下摆</th><th align="center">衣长</th><th align="center">袖长</th></tr></thead><tbody><tr><td align="center">L</td><td align="center">175/92A</td><td align="center">47</td><td align="center">116</td><td align="center">104</td><td align="center">67</td><td align="center">64</td></tr></tbody></table><p><img src="./%E6%9C%8D%E8%A3%85%E7%A9%BF%E6%90%AD/%E7%BD%91%E6%98%93%E4%B8%A5%E9%80%89%E7%BE%BD%E7%BB%92%E6%9C%8D.jpg"></p><p>舒适度：L对于我来说偏小，比较适合初冬穿。</p><p>上身效果：上身效果一般，不好穿搭，偏老气。</p><p>经验：不建议以后买修身羽绒服，不好穿搭。</p><p><a href="https://item.jd.com/10035270999569.html#none">商品链接（墨黑）</a></p><h3 id="毛衣"><a href="#毛衣" class="headerlink" title="毛衣"></a>毛衣</h3><ol><li>优衣库毛衣 </li></ol><table><thead><tr><th align="center">尺寸</th><th align="center">后肩衣长</th><th align="center">肩宽</th><th align="center">身宽</th><th align="center">连肩袖长</th><th align="center">领高</th></tr></thead><tbody><tr><td align="center">170/92A(M)</td><td align="center">65</td><td align="center">50.5</td><td align="center">53</td><td align="center">80.5</td><td align="center">5</td></tr></tbody></table><p><img src="./%E6%9C%8D%E8%A3%85%E7%A9%BF%E6%90%AD/%E4%BC%98%E8%A1%A3%E5%BA%93%E6%AF%9B%E8%A1%A31.jpg"><br><img src="./%E6%9C%8D%E8%A3%85%E7%A9%BF%E6%90%AD/%E4%BC%98%E8%A1%A3%E5%BA%93%E6%AF%9B%E8%A1%A32.jpg"></p><p>舒适度：很舒服。</p><p>上身效果：衣服略大，略长。</p><p><a href="https://detail.tmall.com/item.htm?id=653336177825&spm=a1z09.2.0.0.c6b22e8dgkmhFK&_u=i34fo86laf7e">商品链接（乳白色）</a></p><h3 id="卫裤"><a href="#卫裤" class="headerlink" title="卫裤"></a>卫裤</h3><ol><li>二十八间卫裤</li></ol><table><thead><tr><th align="center">规格</th><th align="center">裤长</th><th align="center">腰围</th><th align="center">臀围</th><th align="center">脚口</th></tr></thead><tbody><tr><td align="center">L</td><td align="center">97</td><td align="center">72-92</td><td align="center">120</td><td align="center">束脚</td></tr></tbody></table><p><img src="./%E6%9C%8D%E8%A3%85%E7%A9%BF%E6%90%AD/%E4%BA%8C%E5%8D%81%E5%85%AB%E9%97%B4%E5%8D%AB%E8%A3%A41.jpg"><br><img src="./%E6%9C%8D%E8%A3%85%E7%A9%BF%E6%90%AD/%E4%BA%8C%E5%8D%81%E5%85%AB%E9%97%B4%E5%8D%AB%E8%A3%A42.jpg"></p><p>舒适度：很舒服。</p><p>上身效果：胯部偏低。</p><p><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.4f3e2e8dYYcndC&id=649344880656&_u=j34fo86l9430">商品链接（灰色加绒款）</a></p><h3 id="直筒裤"><a href="#直筒裤" class="headerlink" title="直筒裤"></a>直筒裤</h3><h1 id="鞋"><a href="#鞋" class="headerlink" title="鞋"></a>鞋</h1><h3 id="休闲鞋"><a href="#休闲鞋" class="headerlink" title="休闲鞋"></a>休闲鞋</h3><h3 id="帆布鞋"><a href="#帆布鞋" class="headerlink" title="帆布鞋"></a>帆布鞋</h3><h3 id="马丁靴"><a href="#马丁靴" class="headerlink" title="马丁靴"></a>马丁靴</h3><h1 id="配饰"><a href="#配饰" class="headerlink" title="配饰"></a>配饰</h1>]]></content>
+    
+    
+    <categories>
+      
+      <category>生活</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>森林公园游记</title>
     <link href="/2021/12/05/%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD%E6%B8%B8%E8%AE%B0/"/>
     <url>/2021/12/05/%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD%E6%B8%B8%E8%AE%B0/</url>
     
-    <content type="html"><![CDATA[<p>来华科已经是第五个年头了，但这却是我第一次在森林公园野餐，和好朋友们度过了一个愉快地下午。以后我应该也会经常来这儿走走，亲近大自然，休息眼睛。<br>备注：从韵苑那里的小路可直达森林公园，总共用时不超过半刻钟！</p><p><img src="/2021/12/05/%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD%E6%B8%B8%E8%AE%B0/%E5%90%88%E5%BD%B11.jpeg"></p><p><img src="/2021/12/05/%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD%E6%B8%B8%E8%AE%B0/%E5%90%88%E5%BD%B12.jpeg"></p>]]></content>
+    <content type="html"><![CDATA[<p>来华科已经是第五个年头了，但这却是我第一次在森林公园野餐，和好朋友们度过了一个愉快地下午。以后我应该也会经常来这儿走走，亲近大自然，休息眼睛。<br>备注：从韵苑那里的小路可直达森林公园，总共用时不超过半刻钟！</p><p><img src="./%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD%E6%B8%B8%E8%AE%B0/%E5%90%88%E5%BD%B11.jpeg"></p><p><img src="./%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD%E6%B8%B8%E8%AE%B0/%E5%90%88%E5%BD%B12.jpeg"></p>]]></content>
     
     
     <categories>
@@ -30,22 +132,9 @@
     <content type="html"><![CDATA[<h2 id="小问题"><a href="#小问题" class="headerlink" title="小问题"></a>小问题</h2><ol><li>负数的立方根</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>((-<span class="hljs-number">1000</span>)**(<span class="hljs-number">1</span>/<span class="hljs-number">3</span>))<br>(<span class="hljs-number">5</span>+<span class="hljs-number">8.660254037844384j</span>) <span class="hljs-comment"># 输出出现问题！</span><br></code></pre></td></tr></table></figure><p>解决方法：先计算正数的立方根再带上负号！</p><ol start="2"><li>负数步长</li></ol><p>python中负数步长即代表反向切片！</p><ol start="3"><li>ndarray.flags</li></ol><p>flags.owndata属性表示该数组是否拥有数据！</p><ol start="4"><li>isin()函数</li></ol><p>isin()接受一个列表，判断该列中元素是否在列表中。</p><ol start="5"><li>plt.legend()</li></ol><ul><li><p>给plt.plot( )中参数label=’’传入字符串类型的值，也就是图例的名称</p></li><li><p>第二步：使用plt.legend( )使上述代码产生效果</p></li></ul>]]></content>
     
     
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Linear Regression</title>
-    <link href="/2021/11/22/Linear-Regression/"/>
-    <url>/2021/11/22/Linear-Regression/</url>
-    
-    <content type="html"><![CDATA[<h2 id="Linear-regression-with-one-variable"><a href="#Linear-regression-with-one-variable" class="headerlink" title="Linear regression with one variable"></a>Linear regression with one variable</h2><h3 id="Plotting-the-Data"><a href="#Plotting-the-Data" class="headerlink" title="Plotting the Data"></a>Plotting the Data</h3><ol><li>数据读取</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">path =  <span class="hljs-string">&#x27;mypath&#x27;</span><br>data = pd.read_csv(path,  names=[<span class="hljs-string">&#x27;Population&#x27;</span>, <span class="hljs-string">&#x27;Profit&#x27;</span>]) <span class="hljs-comment"># DataFrame</span><br></code></pre></td></tr></table></figure><ol start="2"><li>绘图</li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">data.plot(kind=<span class="hljs-string">&#x27;scatter&#x27;</span>, x=<span class="hljs-string">&#x27;Population&#x27;</span>, y=<span class="hljs-string">&#x27;Profit&#x27;</span>, figsize=(<span class="hljs-number">12</span>,<span class="hljs-number">8</span>))<br>plt.show() <span class="hljs-comment"># Source Code?</span><br></code></pre></td></tr></table></figure><h3 id="Gradient-Descent"><a href="#Gradient-Descent" class="headerlink" title="Gradient Descent"></a>Gradient Descent</h3><ol><li></li><li><p>预处理</p></li></ol><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">data.insert(<span class="hljs-number">0</span>, <span class="hljs-string">&#x27;Ones&#x27;</span>, <span class="hljs-number">1</span>)<br></code></pre></td></tr></table></figure><p><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.insert.html">pandas.DataFrame.insert</a></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">cols = data.shape[<span class="hljs-number">1</span>]<br>X = data.iloc[:,:-<span class="hljs-number">1</span>] <span class="hljs-comment"># 负数索引-1返回列表最后一个元素</span><br>y = data.iloc[:,cols-<span class="hljs-number">1</span>:cols]<br></code></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">X = np.matrix(X.to_numpy())<br>y = np.matrix(y.to_numpy())<br>theta = np.matrix(np.array([<span class="hljs-number">0</span>,<span class="hljs-number">0</span>]))<br></code></pre></td></tr></table></figure>]]></content>
-    
-    
     <categories>
       
-      <category>机器学习</category>
+      <category>Python</category>
       
     </categories>
     
