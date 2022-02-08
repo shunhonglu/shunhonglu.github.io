@@ -16,18 +16,26 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="keywords" content="">
-  <meta name="description" content="1.基本语法1.1 行内公式 行内公式的格式是$...$ 例如$g(z) &#x3D; {1\over 1+e^{-z}}$的写法是：$g(z) &#x3D; &amp;#123;1\over 1+e^&amp;#123;-z&amp;#125;&amp;#125;$  1.2 整行公式 整行公式的格式是$$...$$ 例如$$h_\theta(x) &#x3D; g(\theta^Tx)$$ 写法是：$$h_\theta(x) &#x3D; g(\theta^Tx)">
+  <meta name="description" content="什么是Internet网络？ISP网络互连的“网络之网络”  IXP:Internet Exchange Point 主机之间的通信方式 客户&#x2F;服务器(client&#x2F;server)应用模型 对等(peer-peer,P2P)应用模型  接入网络计算机网络结构 数据交换1.电路交换 原理：多路复用(Multiplexing) 分类：网络核心  2.报文交换3.分组交换 原理：统计多路复用(Stati">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown-数学公式">
-<meta property="og:url" content="https://shunhonglu.github.io/2022/01/03/Markdown-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/index.html">
+<meta property="og:title" content="计算机网络-概述">
+<meta property="og:url" content="https://shunhonglu.github.io/2022/01/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/index.html">
 <meta property="og:site_name" content="卢顺洪的博客">
-<meta property="og:description" content="1.基本语法1.1 行内公式 行内公式的格式是$...$ 例如$g(z) &#x3D; {1\over 1+e^{-z}}$的写法是：$g(z) &#x3D; &amp;#123;1\over 1+e^&amp;#123;-z&amp;#125;&amp;#125;$  1.2 整行公式 整行公式的格式是$$...$$ 例如$$h_\theta(x) &#x3D; g(\theta^Tx)$$ 写法是：$$h_\theta(x) &#x3D; g(\theta^Tx)">
+<meta property="og:description" content="什么是Internet网络？ISP网络互连的“网络之网络”  IXP:Internet Exchange Point 主机之间的通信方式 客户&#x2F;服务器(client&#x2F;server)应用模型 对等(peer-peer,P2P)应用模型  接入网络计算机网络结构 数据交换1.电路交换 原理：多路复用(Multiplexing) 分类：网络核心  2.报文交换3.分组交换 原理：统计多路复用(Stati">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-01-03T10:45:32.000Z">
-<meta property="article:modified_time" content="2022-01-05T06:23:49.198Z">
+<meta property="og:image" content="https://shunhonglu.github.io/2022/01/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E5%9B%BE1.png">
+<meta property="og:image" content="https://shunhonglu.github.io/2022/01/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E5%9B%BE2.png">
+<meta property="og:image" content="https://shunhonglu.github.io/2022/01/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E5%9B%BE3.png">
+<meta property="og:image" content="https://shunhonglu.github.io/2022/01/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E5%9B%BE4.png">
+<meta property="og:image" content="https://shunhonglu.github.io/2022/01/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E5%9B%BE5.png">
+<meta property="og:image" content="https://shunhonglu.github.io/2022/01/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E5%9B%BE6.png">
+<meta property="og:image" content="https://shunhonglu.github.io/2022/01/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E5%9B%BE7.png">
+<meta property="article:published_time" content="2022-01-04T03:02:19.000Z">
+<meta property="article:modified_time" content="2022-01-06T05:53:19.943Z">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://shunhonglu.github.io/2022/01/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E5%9B%BE1.png">
   
-  <title>Markdown-数学公式 - 卢顺洪的博客</title>
+  <title>计算机网络-概述 - 卢顺洪的博客</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -173,9 +181,9 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Markdown-数学公式">
+            <span class="h2" id="subtitle" title="计算机网络-概述">
               
-                Markdown-数学公式
+                计算机网络-概述
               
             </span>
 
@@ -185,8 +193,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-01-03 18:45" pubdate>
-        2022年1月3日 晚上
+      <time datetime="2022-01-04 11:02" pubdate>
+        2022年1月4日 上午
       </time>
     </span>
   
@@ -196,7 +204,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      618 字
+      868 字
     </span>
   
 
@@ -205,7 +213,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      2 分钟
+      3 分钟
     </span>
   
 
@@ -234,116 +242,58 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Markdown-数学公式</h1>
+            <h1 style="display: none">计算机网络-概述</h1>
             
             <div class="markdown-body">
-              <h2 id="1-基本语法"><a href="#1-基本语法" class="headerlink" title="1.基本语法"></a>1.基本语法</h2><h3 id="1-1-行内公式"><a href="#1-1-行内公式" class="headerlink" title="1.1 行内公式"></a>1.1 行内公式</h3><ul>
-<li>行内公式的格式是<code>$...$</code></li>
-<li>例如$g(z) = {1\over 1+e^{-z}}$的写法是：<code>$g(z) = &#123;1\over 1+e^&#123;-z&#125;&#125;$</code></li>
+              <h2 id="什么是Internet网络？"><a href="#什么是Internet网络？" class="headerlink" title="什么是Internet网络？"></a>什么是Internet网络？</h2><p>ISP网络互连的“网络之网络”</p>
+<p><img src="./%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E5%9B%BE1.png" srcset="/img/loading.gif" lazyload></p>
+<p>IXP:Internet Exchange Point</p>
+<h2 id="主机之间的通信方式"><a href="#主机之间的通信方式" class="headerlink" title="主机之间的通信方式"></a>主机之间的通信方式</h2><ul>
+<li>客户/服务器(client/server)应用模型</li>
+<li>对等(peer-peer,P2P)应用模型</li>
 </ul>
-<h3 id="1-2-整行公式"><a href="#1-2-整行公式" class="headerlink" title="1.2 整行公式"></a>1.2 整行公式</h3><ul>
-<li>整行公式的格式是<code>$$...$$</code></li>
-<li>例如<br>$$h_\theta(x) = g(\theta^Tx)$$</li>
-<li>写法是：<code>$$h_\theta(x) = g(\theta^Tx)$$</code> </li>
+<h2 id="接入网络"><a href="#接入网络" class="headerlink" title="接入网络"></a>接入网络</h2><p><a target="_blank" rel="noopener" href="https://www.icourse163.org/learn/HIT-154005?tid=1450314458#/learn/content?type=detail&id=1214593613&cid=1218510453">计算机网络结构</a></p>
+<h2 id="数据交换"><a href="#数据交换" class="headerlink" title="数据交换"></a>数据交换</h2><h3 id="1-电路交换"><a href="#1-电路交换" class="headerlink" title="1.电路交换"></a>1.电路交换</h3><ul>
+<li>原理：多路复用(Multiplexing)</li>
+<li>分类：<a target="_blank" rel="noopener" href="https://www.icourse163.org/learn/HIT-154005?tid=1450314458#/learn/content?type=detail&id=1214593614&cid=1218510463">网络核心</a></li>
 </ul>
-<h2 id="2-特殊符号"><a href="#2-特殊符号" class="headerlink" title="2.特殊符号"></a>2.特殊符号</h2><h3 id="2-1-希腊字母"><a href="#2-1-希腊字母" class="headerlink" title="2.1 希腊字母"></a>2.1 希腊字母</h3><table>
-<thead>
-<tr>
-<th align="center">显示</th>
-<th align="center">命令</th>
-<th align="center">显示</th>
-<th align="center">命令</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">α</td>
-<td align="center">\alpha</td>
-<td align="center">β</td>
-<td align="center">\beta</td>
-</tr>
-<tr>
-<td align="center">γ</td>
-<td align="center">\gamma</td>
-<td align="center">δ</td>
-<td align="center">\delta</td>
-</tr>
-<tr>
-<td align="center">ε</td>
-<td align="center">\epsilon</td>
-<td align="center">ζ</td>
-<td align="center">\zeta</td>
-</tr>
-<tr>
-<td align="center">η</td>
-<td align="center">\eta</td>
-<td align="center">θ</td>
-<td align="center">\theta</td>
-</tr>
-<tr>
-<td align="center">ι</td>
-<td align="center">\iota</td>
-<td align="center">κ</td>
-<td align="center">\kappa</td>
-</tr>
-<tr>
-<td align="center">λ</td>
-<td align="center">\lambda</td>
-<td align="center">μ</td>
-<td align="center">\mu</td>
-</tr>
-<tr>
-<td align="center">ν</td>
-<td align="center">\nu</td>
-<td align="center">ξ</td>
-<td align="center">\xi</td>
-</tr>
-<tr>
-<td align="center">π</td>
-<td align="center">\pi</td>
-<td align="center">ρ</td>
-<td align="center">\rho</td>
-</tr>
-<tr>
-<td align="center">σ</td>
-<td align="center">\sigma</td>
-<td align="center">τ</td>
-<td align="center">\tau</td>
-</tr>
-<tr>
-<td align="center">υ</td>
-<td align="center">\upsilon</td>
-<td align="center">φ</td>
-<td align="center">\phi</td>
-</tr>
-<tr>
-<td align="center">χ</td>
-<td align="center">\chi</td>
-<td align="center">ψ</td>
-<td align="center">\psi</td>
-</tr>
-<tr>
-<td align="center">ω</td>
-<td align="center">\omega</td>
-<td align="center"></td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<ul>
-<li>若需要大写希腊字母，将命令首字母大写即可</li>
-<li>若需要斜体希腊字母，在命令前加上var前缀即可</li>
+<h3 id="2-报文交换"><a href="#2-报文交换" class="headerlink" title="2.报文交换"></a>2.报文交换</h3><h3 id="3-分组交换"><a href="#3-分组交换" class="headerlink" title="3.分组交换"></a>3.分组交换</h3><ul>
+<li>原理：统计多路复用(Statistical Multiplexing)</li>
+<li>分组交换需要报文的拆分和重组，会产生额外开销。</li>
+<li>分组交换是并行传输数据，允许更多用户同时使用网络，优于报文交换。<img src="./%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E5%9B%BE2.png" srcset="/img/loading.gif" lazyload alt="分组交换的报文交付时间"></li>
+<li>分组交换与电路交换。<img src="./%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E5%9B%BE3.png" srcset="/img/loading.gif" lazyload alt="分组交换vs电路交换"></li>
 </ul>
-<h3 id="2-2-其他符号"><a href="#2-2-其他符号" class="headerlink" title="2.2 其他符号"></a>2.2 其他符号</h3><ul>
-<li>Markdown中以自然对数为底的指数函数只能这样子<code>$e^x$</code>写吗？即$e^x$</li>
-</ul>
-<h2 id="3-上标与下标"><a href="#3-上标与下标" class="headerlink" title="3.上标与下标"></a>3.上标与下标</h2><ul>
-<li>上标用<code>^</code>来表示，例如$x^2$表示为：<code>$x^2$</code></li>
-<li>下标用<code>-</code>来表示，例如$x_2$表示为：<code>$x_2$</code></li>
-<li>若上标或下标是一个表达式，则需要加上<code>&#123;&#125;</code>，例如$x^{t-1}$表示为：<code>$x^&#123;t-1&#125;$</code></li>
-</ul>
-<h2 id="4-数学公式"><a href="#4-数学公式" class="headerlink" title="4.数学公式"></a>4.数学公式</h2><h2 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h2><ol>
-<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/8b6fc36035c0">Markdown-常用数学公式编辑命令</a></li>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_37167788/article/details/78809779#:~:text=%E5%9C%A8Markdown%E4%B8%AD%EF%BC%8C%E6%9C%89%E4%B8%A4%E7%A7%8D%E8%BE%93%E5%85%A5%E5%85%AC%E5%BC%8F%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%9A%E4%B8%80%E6%98%AF%E8%A1%8C%E5%86%85%E5%85%AC%E5%BC%8F%EF%BC%88inline%EF%BC%89%EF%BC%8C%E7%94%A8%E4%B8%80%E5%AF%B9%E7%BE%8E%E5%85%83%E7%AC%A6%E5%8F%B7%20%24%20%E5%8C%85%E8%A3%B9%E3%80%82%20%E4%BA%8C%E6%98%AF%E6%95%B4%E8%A1%8C%E5%85%AC%E5%BC%8F%EF%BC%88displayed%EF%BC%89%EF%BC%8C%E7%94%A8%E4%B8%80%E5%AF%B9%E7%B4%A7%E6%8C%A8%E7%9A%84%E4%B8%A4%E4%B8%AA%E7%BE%8E%E5%85%83%E7%AC%A6%E5%8F%B7%20%24%24%20%E5%8C%85%E8%A3%B9%E3%80%82%20%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E8%A1%8C%E5%86%85%E5%85%AC%E5%BC%8F%20E,m%20c%202%20%EF%BC%8C%E5%86%99%E6%B3%95%E6%98%AF%EF%BC%9A%20%24E%3Dmc%5E2%24%20%E3%80%82%202.%20%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D">Markdown系列（6）- 如何优雅地在Markdown中输入数学公式</a></li>
+<h2 id="计算机网络性能"><a href="#计算机网络性能" class="headerlink" title="计算机网络性能"></a>计算机网络性能</h2><h3 id="速率，带宽"><a href="#速率，带宽" class="headerlink" title="速率，带宽"></a>速率，带宽</h3><h3 id="时延"><a href="#时延" class="headerlink" title="时延"></a>时延</h3><ol>
+<li>结点处理延迟(nodal processing delay)</li>
+<li>排队延迟(queueing delay)</li>
+<li>传输延迟(transmission delay)<br>类似于高速公路上的车队经过收费站所花的时间</li>
+<li>传播延迟(propagation delay)<br>类似于高速公路上的车队从第一个收费站跑到第二个收费站所用的时间</li>
 </ol>
+<h3 id="时延带宽积"><a href="#时延带宽积" class="headerlink" title="时延带宽积"></a>时延带宽积</h3><p>$时延带宽积=传播时延\times带宽$，链路的时延带宽积又称为以比特为单位的链路长度。<img src="./%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E5%9B%BE4.png" srcset="/img/loading.gif" lazyload alt="时延带宽积"></p>
+<h3 id="丢包率"><a href="#丢包率" class="headerlink" title="丢包率"></a>丢包率</h3><p>$丢包率=\frac{丢包数}{以发分组总数}$</p>
+<h3 id="吞吐量"><a href="#吞吐量" class="headerlink" title="吞吐量"></a>吞吐量</h3><ul>
+<li>吞吐量可分为即时吞吐量和平均吞吐量</li>
+<li>吞吐量取决于瓶颈链路（端到端路径上，限制端到端吞吐量的链路）。</li>
+</ul>
+<h2 id="计算机网络体系结构"><a href="#计算机网络体系结构" class="headerlink" title="计算机网络体系结构"></a>计算机网络体系结构</h2><p><img src="./%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E5%9B%BE5.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="1-五层参考模型"><a href="#1-五层参考模型" class="headerlink" title="1.五层参考模型"></a>1.五层参考模型</h3><ul>
+<li>应用层：支持各种网络应用</li>
+<li>传输层：负责源-目的（端-端）（进程间）完整报文传输；分段与重组；SAP寻址；连接控制；流量控制；差错控制</li>
+<li>网络层：源主机到目的主机数据分组路由和转发</li>
+<li>数据链路层：负责结点-结点数据传输；组帧；物理寻址；流量控制；差错控制；访问（接入）控制</li>
+<li>物理层：接口特性；比特编码；数据率；比特同步；传输模式</li>
+</ul>
+<h3 id="2-OSI"><a href="#2-OSI" class="headerlink" title="2.OSI"></a>2.OSI</h3><ul>
+<li>表示层：数据表示转化；加密/解密；压缩/解压缩</li>
+<li>会话层：对话控制；同步</li>
+</ul>
+<h3 id="3-TCP-IP"><a href="#3-TCP-IP" class="headerlink" title="3.TCP/IP"></a>3.TCP/IP</h3><ul>
+<li>网络接口层相当于五层模型中数据链路层和物理层的合并</li>
+</ul>
+<h3 id="4-数据封装与通信过程"><a href="#4-数据封装与通信过程" class="headerlink" title="4.数据封装与通信过程"></a>4.数据封装与通信过程</h3><p><img src="./%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E5%9B%BE6.png" srcset="/img/loading.gif" lazyload><br><img src="./%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E6%A6%82%E8%BF%B0/%E5%9B%BE7.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h2><ul>
+<li>注意第一章的习题和第二章的习题进行对比理解，什么时候应该按照吞吐量计算，什么时候应该按照相应公式进行计算？</li>
+</ul>
 
             </div>
             <hr>
@@ -353,7 +303,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/Markdown/">Markdown</a>
+                      <a class="hover-with-bg" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
                     
                   </div>
                 
@@ -371,9 +321,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/01/03/Markdown-%E6%8E%92%E7%89%88%E8%A7%84%E8%8C%83/">
+                      <a href="/2022/01/06/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%BA%94%E7%94%A8%E5%B1%82/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Markdown-排版规范</span>
+                        <span class="hidden-mobile">计算机网络-应用层</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -381,8 +331,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/01/03/Logistic-regression/">
-                        <span class="hidden-mobile">Logistic regression</span>
+                      <a href="/2022/01/03/Markdown-%E6%8E%92%E7%89%88%E8%A7%84%E8%8C%83/">
+                        <span class="hidden-mobile">Markdown-排版规范</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
