@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>计算机网络-网络层</title>
+    <link href="/2022/03/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%BD%91%E7%BB%9C%E5%B1%82/"/>
+    <url>/2022/03/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%BD%91%E7%BB%9C%E5%B1%82/</url>
+    
+    <content type="html"><![CDATA[<h2 id="虚电路网络"><a href="#虚电路网络" class="headerlink" title="虚电路网络"></a>虚电路网络</h2><ul><li>无连接服务模型</li><li>ATM 网络</li></ul><h2 id="数据报网络"><a href="#数据报网络" class="headerlink" title="数据报网络"></a>数据报网络</h2><ul><li>连接服务模型</li><li>最长前缀匹配优先：在检索转发表时，优先选择与分组目的地址匹配前缀最长的入口。</li><li>Internet 网络</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>计算机网络</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hexo 解决图片无法显示问题</title>
     <link href="/2022/03/12/Hexo-%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
     <url>/2022/03/12/Hexo-%E8%A7%A3%E5%86%B3%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</url>
