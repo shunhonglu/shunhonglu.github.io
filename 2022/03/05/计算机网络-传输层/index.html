@@ -23,14 +23,14 @@
 <meta property="og:site_name" content="卢顺洪的博客">
 <meta property="og:description" content="多路复用&#x2F;分用 多路分用：传输层依据头部信息将收到的 Segment 交给正确的 Socket，即不同的进程。 多路分用：从多个 Socket 接收数据，为每块数据封装上头部信息，生成 Segment，交给网络层。  可靠数据传输1. GBN 协议发送方：  单个定时器 累计确认 若某个报文段未确认，重传序列号大于等于 n，还未收到 ACK 的所有分组。  接收方：  无缓存，直接丢弃乱序到达的分">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://lsh-hexo-image.oss-cn-beijing.aliyuncs.com/img/1.PNG">
-<meta property="og:image" content="https://shunhonglu.github.io/2022/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E4%BC%A0%E8%BE%93%E5%B1%82/2.png">
-<meta property="og:image" content="https://shunhonglu.github.io/2022/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E4%BC%A0%E8%BE%93%E5%B1%82/3.jpg">
-<meta property="og:image" content="https://shunhonglu.github.io/2022/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E4%BC%A0%E8%BE%93%E5%B1%82/4.jpg">
+<meta property="og:image" content="https://lsh-hexo-image.oss-cn-beijing.aliyuncs.com/image/computer%20network/%E4%BC%A0%E8%BE%93%E5%B1%821.PNG">
+<meta property="og:image" content="https://lsh-hexo-image.oss-cn-beijing.aliyuncs.com/image/computer%20network/%E4%BC%A0%E8%BE%93%E5%B1%822.PNG">
+<meta property="og:image" content="https://lsh-hexo-image.oss-cn-beijing.aliyuncs.com/image/computer%20network/%E4%BC%A0%E8%BE%93%E5%B1%823.JPG">
+<meta property="og:image" content="https://lsh-hexo-image.oss-cn-beijing.aliyuncs.com/image/computer%20network/%E4%BC%A0%E8%BE%93%E5%B1%824.JPG">
 <meta property="article:published_time" content="2022-03-05T03:07:24.000Z">
-<meta property="article:modified_time" content="2022-03-13T03:52:03.980Z">
+<meta property="article:modified_time" content="2022-03-14T04:31:50.571Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://lsh-hexo-image.oss-cn-beijing.aliyuncs.com/img/1.PNG">
+<meta name="twitter:image" content="https://lsh-hexo-image.oss-cn-beijing.aliyuncs.com/image/computer%20network/%E4%BC%A0%E8%BE%93%E5%B1%821.PNG">
   
   <title>计算机网络-传输层 - 卢顺洪的博客</title>
 
@@ -292,19 +292,21 @@
 </ul>
 <h2 id="UDP"><a href="#UDP" class="headerlink" title="UDP"></a>UDP</h2><p>UDP 基于 Internet IP 协议。提供的服务有复用/分用，简单的错误检验。</p>
 <p>UDP 无连接，UDP 发送方和接收方之间不需要握手，并且每个 UDP 段的处理独立于其他段。</p>
-<h3 id="1-UDP-报文段格式"><a href="#1-UDP-报文段格式" class="headerlink" title="1. UDP 报文段格式"></a>1. UDP 报文段格式</h3><p><img src="https://lsh-hexo-image.oss-cn-beijing.aliyuncs.com/img/1.PNG" srcset="/img/loading.gif" lazyload></p>
+<h3 id="1-UDP-报文段格式"><a href="#1-UDP-报文段格式" class="headerlink" title="1. UDP 报文段格式"></a>1. UDP 报文段格式</h3><div align="center">  <img src="https://lsh-hexo-image.oss-cn-beijing.aliyuncs.com/image/computer%20network/%E4%BC%A0%E8%BE%93%E5%B1%821.PNG" srcset="/img/loading.gif" lazyload width="800"/> </div><br>
+
 <h3 id="2-UDP-校验和"><a href="#2-UDP-校验和" class="headerlink" title="2. UDP 校验和"></a>2. UDP 校验和</h3><ul>
 <li>发送方：将段的内容视为 16-bit 整数，计算所有整数的和，进位加在和的后面，将得到的值按位取反，得到校验和。发送方将校验和放入校验和字段。</li>
 <li>接收方：计算所收到段的校验和，将其与校验和字段进行对比，若不相等则检测出错误，若相等则没有检测出错误（但可能有错误）。</li>
 </ul>
-<h2 id="TCP"><a href="#TCP" class="headerlink" title="TCP"></a>TCP</h2><h3 id="1-TCP-报文段格式"><a href="#1-TCP-报文段格式" class="headerlink" title="1. TCP 报文段格式"></a>1. TCP 报文段格式</h3><div align="center">  <img src="/2022/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E4%BC%A0%E8%BE%93%E5%B1%82/2.png" srcset="/img/loading.gif" lazyload width="700"> </div><br>
+<h2 id="TCP"><a href="#TCP" class="headerlink" title="TCP"></a>TCP</h2><h3 id="1-TCP-报文段格式"><a href="#1-TCP-报文段格式" class="headerlink" title="1. TCP 报文段格式"></a>1. TCP 报文段格式</h3><div align="center">  <img src="https://lsh-hexo-image.oss-cn-beijing.aliyuncs.com/image/computer%20network/%E4%BC%A0%E8%BE%93%E5%B1%822.PNG" srcset="/img/loading.gif" lazyload width="700"/> </div><br>
 
 <p>注意理解 TCP 中的确认号！</p>
 <p>确认号的意思是发送方在发送数据包（假设大小为 10 byte）时，同时送上一个序号（假设为 500），那么接收方收到这个数据包以后，就可以回复一个确认号（510 = 500 + 10）告诉发送方“我已经收到了你的数据包，你可以发送下一个数据包，序号从 510 开始”。</p>
-<h3 id="2-TCP-的三次握手"><a href="#2-TCP-的三次握手" class="headerlink" title="2. TCP 的三次握手"></a>2. TCP 的三次握手</h3><div align="center">  <img src="/2022/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E4%BC%A0%E8%BE%93%E5%B1%82/3.jpg" srcset="/img/loading.gif" lazyload width="800"> </div><br>
+<h3 id="2-TCP-的三次握手"><a href="#2-TCP-的三次握手" class="headerlink" title="2. TCP 的三次握手"></a>2. TCP 的三次握手</h3><div align="center">  <img src="https://lsh-hexo-image.oss-cn-beijing.aliyuncs.com/image/computer%20network/%E4%BC%A0%E8%BE%93%E5%B1%823.JPG" srcset="/img/loading.gif" lazyload width="800"/> </div><br>
 
+<p>“ width=”800”/&gt; </div><br></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/lengxiao1993/article/details/82771768">TCP 为什么三次握手而不是两次握手（正解版）</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/u011168837/article/details/110848170">TCP 为什么需要三次握手？</a></p>
-<h3 id="3-TCP-的四次挥手"><a href="#3-TCP-的四次挥手" class="headerlink" title="3. TCP 的四次挥手"></a>3. TCP 的四次挥手</h3><div align="center">  <img src="/2022/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E4%BC%A0%E8%BE%93%E5%B1%82/4.jpg" srcset="/img/loading.gif" lazyload width="800"> </div><br>
+<h3 id="3-TCP-的四次挥手"><a href="#3-TCP-的四次挥手" class="headerlink" title="3. TCP 的四次挥手"></a>3. TCP 的四次挥手</h3><div align="center">  <img src="https://lsh-hexo-image.oss-cn-beijing.aliyuncs.com/image/computer%20network/%E4%BC%A0%E8%BE%93%E5%B1%824.JPG" srcset="/img/loading.gif" lazyload width="800"/> </div><br>
 
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Shuffle_Ts/article/details/93909003">tcp四次挥手，为什么是四次？</a><br><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1873188">为什么tcp建立连接需要三次握手，断开连接需要四次挥手</a></p>
 
