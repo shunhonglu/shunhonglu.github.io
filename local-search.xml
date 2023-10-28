@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Pycharm 中调试 streamlit</title>
+    <link href="/2023/10/28/PyCharm%20%E4%B8%AD%E8%B0%83%E8%AF%95%20streamlit/"/>
+    <url>/2023/10/28/PyCharm%20%E4%B8%AD%E8%B0%83%E8%AF%95%20streamlit/</url>
+    
+    <content type="html"><![CDATA[<h4 id="PyCharm-中调试-streamlit-应该把-streamlit-当作模块进行调试，具体配置方法如下："><a href="#PyCharm-中调试-streamlit-应该把-streamlit-当作模块进行调试，具体配置方法如下：" class="headerlink" title="PyCharm 中调试 streamlit 应该把 streamlit 当作模块进行调试，具体配置方法如下："></a>PyCharm 中调试 streamlit 应该把 streamlit 当作模块进行调试，具体配置方法如下：</h4><div align="center">  <img src="https://lsh-hexo-image.oss-cn-beijing.aliyuncs.com/image/streamlit/2023-10-28-16-52-27.png" width="600"/> </div><br><ol><li>首先在第一个红色箭头位置选择为 module，并指定为 streamlit 模块。</li><li>之后在第二个红色箭头位置输入参数。</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>streamlit</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>GitHub Pages with Hexo tips</title>
+    <link href="/2023/06/25/GitHub%20Pages%20with%20Hexo%20tips/"/>
+    <url>/2023/06/25/GitHub%20Pages%20with%20Hexo%20tips/</url>
+    
+    <content type="html"><![CDATA[<h2 id="基础部分"><a href="#基础部分" class="headerlink" title="基础部分"></a>基础部分</h2><p>常用指令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate <span class="hljs-comment"># 生成静态文件</span><br>$ hexo serve <span class="hljs-comment"># 启动服务器</span><br>$ hexo deploy <span class="hljs-comment"># 部署网站</span><br>$ hexo clean <span class="hljs-comment"># 清除缓存文件 (db.json) 和已生成的静态文件 (public)</span><br>$ hexo new [layout] &lt;title&gt; <span class="hljs-comment"># 新建一篇文章</span><br></code></pre></td></tr></table></figure><p>参考：<a href="https://hexo.io/zh-cn/docs/commands">官方文档</a></p><h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><p>我这里使用的主题是 fluid <a href="https://github.com/fluid-dev/hexo-theme-fluid">(hexo-theme-fluid)</a>。</p><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ ERROR Deployer not found: git <span class="hljs-comment"># question</span><br>$ npm install hexo-deployer-git –save <span class="hljs-comment"># solution</span><br></code></pre></td></tr></table></figure><h2 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h2><p>VS Code预览Markdown快捷键：Ctrl+Shirt+V</p><p>教程：<a href="https://hans2936.github.io/">博客</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Hexo</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
