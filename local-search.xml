@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>Unity UGUI Rect Transformer</title>
+    <link href="/2023/12/13/Unity%20UGUI%20Rect%20Transformer/"/>
+    <url>/2023/12/13/Unity%20UGUI%20Rect%20Transformer/</url>
+    
+    <content type="html"><![CDATA[<p>锚点作用在父对象上，主要用于确定子对象的 Pivot（中心点）到子对象的 Anchors（锚点）的相对位置。</p><p>中心点是矩形旋转的位置。（经测试也是矩阵缩放的中心点）</p><p>参考链接：<a href="https://docs.unity.cn/cn/2023.2/Manual/class-RectTransform.html">矩形变换</a></p><p>一般当锚点不是一个点时，可以使用 SetInsetAndSizeFromParentEdge 和 SetSizeWithCurrentAnchors 函数确定矩形的位置。</p><p>参考链接：</p><ol><li><a href="https://docs.unity.cn/cn/2023.2/ScriptReference/RectTransform.html">RectTransform</a></li><li><a href="https://zhuanlan.zhihu.com/p/139252379">Unity3D RectTransform使用详解：布局、属性、方法</a></li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>Unity</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Pycharm 中调试 streamlit</title>
     <link href="/2023/10/28/PyCharm%20%E4%B8%AD%E8%B0%83%E8%AF%95%20streamlit/"/>
     <url>/2023/10/28/PyCharm%20%E4%B8%AD%E8%B0%83%E8%AF%95%20streamlit/</url>
